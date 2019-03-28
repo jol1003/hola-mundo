@@ -1,7 +1,7 @@
 FROM openjdk:8-jdk-alpine
 MAINTAINER juliooncebaylopez@gmail.com
 VOLUME /tmp
-COPY target/*.jar demo1.jar
+COPY /target/*.jar demo1.jar
 ENTRYPOINT ["java","-jar","/demo1.jar"]
 # Zuul port
 #EXPOSE 8765 
